@@ -4,7 +4,7 @@ pipeline:
     - unit_test: deploy
 profiles:
   fetch:
-    script: echo "this works" 
+    script: "exit 0"
     output: 
       - scm_artifact.tar
   unit_test:
