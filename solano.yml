@@ -18,7 +18,7 @@ profiles:
     environment:
       DOCKER_IMAGE: predixci/canary
       DOCKER_USERNAME: predixci
-      # DOCKER_PASSWORD: set in Predix CI UI
+      # DOCKER_PASSWORD: set in Predix CI U
       # SOLANO_API_KEY:  set in Predix CI UI
   default:
     script: dev/null
