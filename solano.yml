@@ -10,15 +10,15 @@ profiles:
   unit_test:
     input: 
       - scm_artifact.tar
-    script: echo "that works"
+    script: ./scripts/unit_test.sh
   deploy:
     input: 
       - build_artifact.tar
-    script: echo "also this one"
+    script: ./scripts/deploy.sh
     environment:
       DOCKER_IMAGE: predixci/canary
       DOCKER_USERNAME: predixci
-      # DOCKER_PASSWORD: set in Predix CI U
+      # DOCKER_PASSWORD: set in Predix CI UI
       # SOLANO_API_KEY:  set in Predix CI UI
   default:
     script: dev/null
